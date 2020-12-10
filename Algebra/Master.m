@@ -1,9 +1,65 @@
-(* Wolfram Language Package *)
+(* ::Package:: *)
 
-(* Created by the Wolfram Workbench 15-Nov-2020 *)
+(* ::Title:: *)
+(*AbstractAlgebra`Master` package*)
 
-BeginPackage["Algebra`"]
-(* Exported symbols added here with SymbolName::usage *) 
+
+(* ::Subsubtitle:: *)
+(*Exploring Abstract Algebra with Mathematica*)
+(*Al Hibbard and Ken Levasseur*)
+(*\[Copyright] Copyright 1998 by Al Hibbard and Ken Levasseur*)
+
+
+(* ::Section:: *)
+(* 0. Prelims*)
+
+
+(* :Title:  AbstractAlgebra`Master *)
+
+(* :Context: AbstractAlgebra`Master` *)
+
+(* :Authors: 	
+	
+	Allen C. Hibbard
+	hibbarda@central.edu
+	http://www.central.edu/homepages/hibbarda/
+							 
+	Kenneth M. Levasseur
+	Kenneth_Levasseur@uml.edu
+	http://faculty.uml.edu/klevasseur/
+	
+	Homepage for Exploring Abstract Algebra with Mathematica:
+	http://www.central.edu/eaam/
+
+*)
+
+(* :Package Version: 9.0.0 *)
+
+(* :Mathematica Version: 8.x, NOT 3.x, 4.x, 5.x since graphics output has been modified *)
+
+(* :Copyright: Copyright 2006, Allen C. Hibbard and 
+			 Kenneth M. Levasseur*)
+			 
+			 
+
+
+(* ::Subsection:: *)
+(*History of sections of code*)
+
+
+(* ::Input:: *)
+(*(* :History:*)
+(*See AAChanges.nb notebook for details*)
+(*	*)
+(**)*)
+
+
+(* ::Section:: *)
+(* 1. Startup*)
+
+
+BeginPackage["AbstractAlgebra`Master`"(*,{ Removed "Utilities`FilterRules`" from list 1/7/2013}*)
+(* Removed ,"Graphics`Colors`" from list 7/24/08 *)];
 Off[General::"spell",General::"spell1"];
 Off[AppendTo::"rvalue"];
 Off[Function::"slotn"];
@@ -16994,3 +17050,11 @@ SwitchStructureTo[Group];
 End[];
 (* Protect[Z, ZG, ZR, NS, Rot, Ref, U, Zx, GF, Diag, GL, LT, LTD, SL, UT, UTD, Aut, S]; *)
 EndPackage[];
+
+(* Declarations for file AbstractAlgebra`LabCode`*)
+
+DeclarePackage["AbstractAlgebra`LabCode`",{"AddPermToGroup", "CInf", "CollectOrders", "CompleteGroupQ", "DropPermFromGroup", "D1Prod", "D2Prod", "GoodGroupElementsQ", "GroupsToConsider", "Ind", "Lab2", "Lab3", "Lab4", "LG", "ListOperationPreservingElements", "myDiv", "myDivisorSigma", "myDot", "myMod", "myPower", "MySymmetryGroup", "myZees", "quatOp", "ReduceList", "RestrictList", "SE", "ShowGroupOrders", "ShowOne", "ShowPossiblePermsAsRules", "ShowPossiblePermutations", "TestPermutationQ", "trivProd", "undef", "Verbal"}];
+
+
+
+
